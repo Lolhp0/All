@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Tier List Template</title>
+</head>
+
+<body dir="ltr">
+    <header>
+        <div class="site-top-row">
+            <div class="site-title-clmn">
+                <div class="site-title">
+                    <a href="index.html">ABRANKS</a>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <input type="text" name="search_player" id="search-input" class="search-player"
+                    placeholder="Search Player" minlength="3" maxlength="16">
+            </div>
+        </div>
+    </header>
+
+    <main class="tier-clmns">
+
+        <div class="tier-clmn" id="t1-clmn">
+            <div class="clmn-title">Tier 1</div>
+
+            <div class="clmn-ht tier1-clmn-ht" id="hightier-clmn"></div>
+
+            <div class="clmn-lt tier1-clmn-lt" id="lowtier-clmn"></div>
+        </div>
+
+        <div class="tier-clmn" id="t2-clmn">
+            <div class="clmn-title">Tier 2</div>
+
+            <div class="clmn-ht tier2-clmn-ht" id="hightier-clmn"></div>
+
+            <div class="clmn-lt tier2-clmn-lt" id="lowtier-clmn"></div>
+        </div>
+
+        <div class="tier-clmn" id="t3-clmn">
+            <div class="clmn-title">Tier 3</div>
+
+            <div class="clmn-ht tier3-clmn-ht" id="hightier-clmn"></div>
+
+            <div class="clmn-lt tier3-clmn-lt" id="lowtier-clmn"></div>
+        </div>
+
+        <div class="tier-clmn" id="t4-clmn">
+            <div class="clmn-title">Tier 4</div>
+
+            <div class="clmn-ht tier4-clmn-ht" id="hightier-clmn"></div>
+
+            <div class="clmn-lt tier4-clmn-lt" id="lowtier-clmn"></div>
+        </div>
+
+        <div class="tier-clmn" id="t5-clmn">
+            <div class="clmn-title">Tier 5</div>
+
+            <div class="clmn-ht tier5-clmn-ht" id="hightier-clmn"></div>
+
+            <div class="clmn-lt tier5-clmn-lt" id="lowtier-clmn"></div>
+        </div>
+
+        <div class="info-clmn">
+            <div class="clmn-title info-title">Info</div>
+            <div class="info-box">
+                <div class="info-top">
+                    <p>Get Tier Tested Now!</p>
+                    <a href="#">
+                        <button class="info-btn">Get Tested</button>
+                    </a>
+                </div>
+                <div class="info-bottom">
+                    <div class="bottom-first-row info-bottom-rows">
+                        <div class="ht-info clr-info"></div>
+                        <strong class="tier-info">High Tier "HT"</strong>
+                    </div>
+                    <div class="bottom-last-row info-bottom-rows">
+                        <div class="lt-info clr-info"></div>
+                        <strong class="tier-info">Low Tier "LT"</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-clmn">
+            <div class="clmn-title panel-title">Admin Panel</div>
+
+            <div class="panel-box">
+                <input type="text" name="tier_input" id="input-tier" class="panel-input" required
+                    placeholder="Player Tier" minlength="6" maxlength="6">
+                <input type="text" name="username_input" id="input-username" class="panel-input" required
+                    placeholder="Player Username" minlength="3" maxlength="16">
+                <input type="text" name="rank_input" id="input-rank" class="panel-input" required
+                    placeholder="High/Low Tier" minlength="3" maxlength="4">
+
+                <button class="panel-btn" id="panel-upload">Done</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
